@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
     Scanner scan = new Scanner(System.in);
+
         System.out.println("**********Menu************");
         System.out.println("1. Conocer que tienen en comun los felinos ");
         System.out.println("2. Conocer 2 tipos de felinos salvajes ");
@@ -70,7 +71,7 @@ public class Main {
                         Second.setGenero(scan.nextLine());
 
                         break;
-                }
+                }//arreglar
                 break;
             default:
                 System.out.println("Ninguna opcion seleccionada");
