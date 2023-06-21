@@ -20,7 +20,19 @@ public class Main {
                 uno.comer();
                 break;
             case 2:
-
+                Tigre one = new Tigre(3.1,"Tigre de Bengala","Albino","Selvas");
+                Leon two =new Leon(2,"Leon Salvaje","Sabana","Carnivora");
+                System.out.println("********FELINOS SALVAJES********");
+                System.out.println("-------------");
+                System.out.println("El "+one.nombre+" tiene un tamaño de "+one.tamaño+" para los tigres albinos que mayormente viven es las"+one.getHabitad());
+                System.out.println("Sus principales actividades son");
+                one.asechar();
+                one.vigilar();
+                System.out.println("-------------");
+                System.out.println("El "+two.nombre+" tiene un tamaño de "+two.tamaño+" viven es las"+two.Habitad+" y su dieta es "+two.dieta);
+                System.out.println("Sus principales actividades son");
+                two.rugir();
+                two.cazar();
                 break;
             case 3:
 
