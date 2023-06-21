@@ -35,7 +35,42 @@ public class Main {
                 two.cazar();
                 break;
             case 3:
+                System.out.println("Registro de 1) Siames , 2) persa: ");
+                int t = scan.nextInt();
+                switch (t){
+                    case 1:
+                        Siames first = new Siames(0,"","",0,"","");
+                        System.out.println("Registrar Nombre: ");
+                        String q=scan.nextLine();
+                        first.setNombre(q);
+                        System.out.println("Registrar Tamaño: ");
+                        first.setTamaño(scan.nextDouble());
+                        System.out.println("Registrar Familia a la que pertenece:");
+                        first.setFamilia(scan.nextLine());
+                        System.out.println("Registrar Peso del Felino: ");
+                        first.setPeso(scan.nextDouble());
+                        System.out.println("Registrar Tipo de pelaje: ");
+                        first.setTipoPelaje(scan.nextLine());
+                        System.out.println("Registrar Combre: ");
+                        first.setColor(scan.nextLine());
+                        break;
+                    case 2:
+                        Persa Second = new Persa(0,"","",0,"","");
+                        System.out.println("Registrar Nombre: ");
+                        Second.setNombre(scan.nextLine());
+                        System.out.println("Registrar Tamaño: ");
+                        Second.setTamaño(scan.nextDouble());
+                        System.out.println("Registrar Familia a la que pertenece:");
+                        Second.setFamilia(scan.nextLine());
+                        System.out.println("Registrar Peso del Felino: ");
+                        Second.setPeso(scan.nextDouble());
+                        System.out.println("Registrar Color de Ojos: ");
+                        Second.setColorOjos(scan.nextLine());
+                        System.out.println("Registrar Genero del Felino: ");
+                        Second.setGenero(scan.nextLine());
 
+                        break;
+                }
                 break;
             default:
                 System.out.println("Ninguna opcion seleccionada");
